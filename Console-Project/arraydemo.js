@@ -8,3 +8,10 @@ console.log(uniqueNumbers);
 const numbers1 = [1, 2, 2, 3, 4, 4, 7, 7, 11, 88, 9, 5, 9, 7, 12, 88];
 const uniqueNumbers1 = numbers1.filter((num, index) => numbers1.indexOf(num) === index);
 console.log(uniqueNumbers1);  
+
+// additional change
+
+const numbers2 = [1, 2, 2, 3, 4, 4, 7, 7, 11, 77, 9, 5, 9, 7, 12, 77];
+const uniqueNumbers2 = [...new Set(numbers2)];
+console.log(uniqueNumbers2);  
+
